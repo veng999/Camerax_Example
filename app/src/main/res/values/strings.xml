@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CameraX_Example</string>
+    <string name="image_capture_button">Image capture button</string>
+    <string name="permission_camera">Camera</string>
+    <string name="need_permissions">This app requires the following permissions:\n%1$s.\nWould you grant such permissions?</string>
+    <string name="need_camera_permission">This app requires an access to camera to work. Would you grant such permission?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_filter_button_text">no filter</string>
+    <string name="sketch_button_text">sketch</string>
+    <string name="color_invert_button_text">color invert</string>
+    <string name="solarize_button_text">solarize</string>
+    <string name="grayscale_button_text">grayscale</string>
+    <string name="brightness_button_text">brightness</string>
+    <string name="contrast_button_text">contrast</string>
+    <string name="pixelation_button_text">pixelation</string>
+    <string name="glass_sphere_button_text">glass sphere</string>
+    <string name="crosshatch_button_text">crosshatch</string>
+    <string name="gamma_button_text">gamma</string>
+</resources>
