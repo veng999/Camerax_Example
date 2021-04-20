@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
 import com.example.camerax_example.App
+import timber.log.Timber
 import java.io.File
 
 private const val TAG = "CustomImageSaveCallback"
@@ -17,7 +18,7 @@ class CustomImageSaveCallback(private val file: File) : ImageCapture.OnImageSave
     override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
         val msg = "Photo capture succeeded: ${file.absolutePath}"
         Toast.makeText(appContext.applicationContext, msg, Toast.LENGTH_SHORT).show()
-        Log.d(TAG, msg)
+        Timber.d(msg)
     }
 
     override fun onError(exception: ImageCaptureException) {
@@ -31,7 +32,7 @@ class CustomImageSaveCallback(private val file: File) : ImageCapture.OnImageSave
         }
         val msg = "Photo capture failed: $reason"
         Toast.makeText(appContext, msg, Toast.LENGTH_SHORT).show()
-        Log.e(TAG, msg)
+        Timber.e(msg)
         exception.printStackTrace()
     }
 

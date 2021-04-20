@@ -10,5 +10,7 @@ object CameraUtils {
             .requireLensFacing(lensFacing)
             .build()
 
-    fun getImageAnalysis() = ImageAnalysis.Builder().setBackpressureStrategy(STRATEGY_DELIVERY_LATEST).build()
+    fun getImageAnalysis() = ImageAnalysis.Builder()
+            .setBackpressureStrategy(STRATEGY_DELIVERY_LATEST)
+            .build()
 }

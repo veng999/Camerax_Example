@@ -1,21 +1,17 @@
 package com.example.camerax_example
 
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import com.example.camerax_example.camera.Callback
-import com.example.camerax_example.camera.CameraFragment
 import com.example.camerax_example.databinding.ActivityMainBinding
 import com.example.camerax_example.ext.showAlert
 import com.example.camerax_example.home.HomeFragment
 import com.example.camerax_example.utils.PermissionHelper
 import com.example.camerax_example.utils.Permissionist
-import kotlinx.android.synthetic.main.activity_main.*
+
 
 private const val FLAGS_FULLSCREEN = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
         View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or
@@ -40,7 +36,6 @@ class MainActivity : AppCompatActivity(), Permissionist, Callback {
                     .commit()
         }
     }
-
 
     override fun showFragment(fragment: Fragment) {
         supportFragmentManager

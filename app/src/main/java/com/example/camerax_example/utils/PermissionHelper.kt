@@ -14,11 +14,11 @@ class PermissionHelper(
     private val grantPermissions = PublishSubject.create<Collection<String>>()
     private val denyPermissions = PublishSubject.create<Collection<String>>()
 
-    fun request(permission: String) {
+    private fun request(permission: String) {
         request(setOf(permission))
     }
 
-    fun request(permissions: Set<String>, ignoreRationale: Collection<String>? = null) {
+    private fun request(permissions: Set<String>, ignoreRationale: Collection<String>? = null) {
         rationaleCallback
                 ?.let { callback ->
                     permissions

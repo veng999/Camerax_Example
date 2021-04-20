@@ -10,8 +10,8 @@
 
     <androidx.camera.view.PreviewView
         android:id="@+id/viewFinder"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,8 +26,8 @@
 
     <ImageButton
         android:id="@+id/shutter"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@null"
         android:src="@drawable/button_shutter_normal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,8 +36,8 @@
 
     <ImageButton
         android:id="@+id/switchCamera"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@null"
         android:src="@drawable/button_switch_camera_normal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,8 +46,8 @@
 
     <ImageButton
         android:id="@+id/filterButton"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/filter"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
